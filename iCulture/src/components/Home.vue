@@ -74,7 +74,7 @@ export default {
 
 <style lang="scss" scoped>
 .home {
-    
+
     // Title Page
     .cover {
         display: flex;
@@ -120,7 +120,7 @@ export default {
         width: 100%;
         height: 100%;
         font-family: "Arial";
-        
+
         .header {
             display: flex;
             width: 100%;
@@ -174,5 +174,3 @@ export default {
     }
 }
 </style>
-
-
