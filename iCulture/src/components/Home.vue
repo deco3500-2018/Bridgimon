@@ -5,7 +5,7 @@
             <div class="logo">
                 <img src="../assets/logo.png">
             </div>
-            <div class="title">iCulutre</div>
+            <div class="title">iCulture</div>
             <div class="text">Find new Culture</div>
             <button @click="cover = false">Continue</button>
         </div>
