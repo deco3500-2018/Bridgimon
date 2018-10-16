@@ -3,7 +3,7 @@
         <!-- Title page -->
         <div v-if="cover" class="cover">
             <div class="logo">
-                <img src="../assets/logo.png">
+                <img src="../assets/home/logo.png">
             </div>
             <div class="title">iCulture</div>
             <div class="text">Find new Culture</div>
@@ -19,18 +19,25 @@
                  class="switch"
                  :class="{active: window == 'home'}"
                  @click="window = 'home'"
-                >Home</div>
+                >
+                 Home
+                 <div 
+                  v-if="window == 'home'"
+                  class="active-border"
+                ></div>
+                </div>
                 <div
                  class="switch"
                  :class="{active: window == 'events'}"
                  @click="window = 'events'"
-                >Events</div>
-            </div>
-
-            <!-- Search Bar -->
-            <div class="search">
-                <img src="../assets/search.svg">
-                <input placeholder="Find New Culture!">
+                >
+                 Events
+                 <div 
+                  v-if="window == 'events'"
+                  class="active-border"
+                ></div>
+                </div>
+                
             </div>
 
             <!-- Home Events -->
@@ -38,6 +45,11 @@
              class="main-window"
              v-if="window == 'home'"
             >
+                <!-- Search Bar -->
+                <div class="search">
+                    <SearchBar></SearchBar>
+                </div>
+
                 <!-- Popular Events -->
                 <EventSlide :type="'Popular Events'"></EventSlide>
 
@@ -45,7 +57,7 @@
                 <EventSlide :type="'Events Near You'"></EventSlide>
 
                 <!-- Upcoming Events -->
-                <EventSlide :type="'Upcoming Events'"></EventSlide>
+                <EventSlideVertical></EventSlideVertical>
             </div>
 
             <!-- All Events -->
@@ -60,11 +72,15 @@
 </template>
 
 <script>
+import SearchBar from '@/components/items/SearchBar'
 import EventSlide from '@/components/items/EventSlide'
+import EventSlideVertical from '@/components/items/EventSlideVertical'
+
+
 
 export default {
     name: "Home",
-    components: { EventSlide },
+    components: { EventSlide, SearchBar, EventSlideVertical},
     data: () => ({
         cover: true,
         window: "home"
@@ -103,15 +119,14 @@ export default {
 
         button {
             width: 275px;
-            height: 40px;
+            height: 60px;
             margin-top: 200px;
             border: 0;
-            border-radius: 4px;
-            background-color: #f2bb05;
+            border-radius: 30px;
+            background-color: #323232;
             color: #FFFFFF;
             font-size: 24px;
-            font-family: "Arial";
-            box-shadow: 0 0 8px #f2bb05;
+            box-shadow: 0 0 8px #323232;
         }
     }
 
@@ -119,57 +134,56 @@ export default {
     .main {
         width: 100%;
         height: 100%;
-        font-family: "Arial";
+        font-family: "Georgia";
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  
 
         .header {
             display: flex;
             width: 100%;
-            height: 60px;
+            height: 80px;
+            background-color: #323232;
+            justify-content: space-around;
 
             .switch {
                 display: flex;
-                align-items: center;
+                align-items: flex-end;
                 justify-content: center;
-                width: 50%;
-                background-color: #d74e09;
+                position: relative;
+                width: 40%;
                 color: #FFFFFF;
-                font-size: 30px;
-                box-shadow: 0 0 15px #6e0e0a inset;
+                font-size: 24px;
                 z-index: 2;
 
                 &.active{
-                    box-shadow: none;
-                    border-bottom: 5px solid #6e0e0a;
+                    color: #d74e09;
+                }
+
+                .active-border {
+                    position: absolute;
+                    bottom: -2.5px;
+                    height: 5px;
+                    width: 100%;
+                    border-radius: 5px;
+                    background-color: #d74e09;
                 }
             }
         }
 
-        .search {
-            display: flex;
-            width: 100%;
-            height: 40px;
-            background-color: #FFFFFF;
-            box-shadow: 0 0 4px #000000;
-            z-index: 1;
-            margin-bottom: 10px;
-
-            img {
-                height: 20px;
-                width: 20px;
-                padding: 10px;
-            }
-
-            input {
-                border: 0;
-                font-size: 18px;
-                padding-left: 10px;
-            }
-        }
-
         .main-window {
-            height: calc(100% - 130px);
-            padding: 10px;
+            height: calc(100% - 80px);
+            width: 100%;
             overflow: scroll;
+            padding-left: 10px;
+            padding-bottom: 10px;
+
+            .search {
+                display: flex;
+                justify-content: center;
+                margin-right: 10px;
+            }
         }
     }
 }

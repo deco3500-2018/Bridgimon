@@ -1,15 +1,18 @@
 <template>
     <div class="event-slide">
-        <div class="title">{{ type }}</div>
+        <div class="title">
+            {{ type }}
+            <span class="see-more">See more ></span>
+        </div>
         <div class="slide">
             <div class="card" v-for="(card, index) in sample_data" :key="index">
                 <img :src="card.img_path">
-                <span>{{ card.name }}</span>
+                <div class="name">{{ card.name }}</div>
                 <div
                  v-if="type == 'Popular Events'"
                  class="info"
                 >
-                    <img src="../../assets/hearts.svg">
+                    <img src="../../assets/home/hearts.svg">
                     {{ card.likes }}
                 </div>
                 <div
@@ -64,43 +67,56 @@ export default {
 
 <style lang="scss" scoped>
 .event-slide {
-    margin-bottom: 20px;
+    width: 100%;
 
     .title {
-        font-size: 24px;
+        position: relative;
+        width: 100%;
+        font-size: 18px;
         font-weight: bold;
-        color: #f2bb05;
+        color: #040f16;
         margin-bottom: 10px;
+
+        .see-more {
+            position: absolute;
+            right: 10px;
+            top: 9px;
+            font-size: 10px;
+            font-weight: bold;
+            color: #868a8b;
+        }
     }
 
     .slide {
-        display: flex;
         width: 100%;
-        overflow: scroll;
-        padding-bottom: 10px;
-        box-shadow: 0px 4px 3px -3px rgba(0,0,0,0.5);
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
 
         .card {
-            display: flex;
+            display: inline-block;
+            width: 120px;
             margin-right: 15px;
             flex-direction: column;
-            color: #d74e09;
+            color: #040f16;
+            border: 0;
 
             > img {
-                width: 140px;
-                height: 80px;
+                width: 120px;
+                height: 70px;
                 margin-bottom: 10px;
+                border-radius: 10px;
             }
 
-            span {
+            .name {
                 font-weight: bold;
-                font-size: 16px;
+                font-size: 12px;
             }
 
             .info {
                 display: flex;
                 align-items: center;
-                font-size: 14px;
+                font-size: 10px;
 
                 img {
                     width: 16px;

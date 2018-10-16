@@ -30,4 +30,8 @@ html, body {
   color: #040f16;
   background-color: #fff;
 }
+
+.frame > div {
+  width: 100%;
+}
 </style>
