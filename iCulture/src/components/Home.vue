@@ -8,6 +8,7 @@
             <div class="title">iCulture</div>
             <div class="text">Find new Culture</div>
             <button @click="cover = false">Continue</button>
+            <img src="../assets/sample_events/ChineseNewYear/lanterns1.jpg">
         </div>
 
         <!-- Home page -->
@@ -139,19 +140,15 @@ export default {
             font-size: 24px;
             box-shadow: 0 0 8px #323232;
         }
-    }
 
-    .cover::after {
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        position: absolute;
-        z-index: -1;
-        content: "";
-        background: url("../assets/sample_events/ChineseNewYear/lanterns1.jpg");
-        background-size: cover;
-        opacity: 0.2;
+        > img {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+        }
     }
 
     // Home Page
