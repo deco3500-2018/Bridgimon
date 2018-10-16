@@ -65,7 +65,10 @@
              class="main-window"
              v-if="window == 'events'"
             >
-            Events
+                <!-- Search Bar -->
+                <div class="search">
+                    <SearchBar></SearchBar>
+                </div>
             </div>
         </div>
     </div>
@@ -100,6 +103,8 @@ export default {
         width: 100%;
         height: 100%;
         font-family: "Georgia";
+        position: relative;
+        opacity: 0.9;
 
         .logo > img {
             margin-bottom: 30px;
@@ -128,6 +133,19 @@ export default {
             font-size: 24px;
             box-shadow: 0 0 8px #323232;
         }
+    }
+
+    .cover::after {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+        content: "";
+        background: url("../assets/sample_events/ChineseNewYear/lanterns1.jpg");
+        background-size: cover;
+        opacity: 0.2;
     }
 
     // Home Page
@@ -185,6 +203,8 @@ export default {
                 margin-right: 10px;
             }
         }
+
+
     }
 }
 </style>
