@@ -69,6 +69,10 @@
                 <div class="search">
                     <SearchBar></SearchBar>
                 </div>
+
+                <!-- Select continents and countries -->
+                <div class="select-header">Origin</div>
+                <SelectArea></SelectArea>
             </div>
         </div>
     </div>
@@ -78,12 +82,14 @@
 import SearchBar from '@/components/items/SearchBar'
 import EventSlide from '@/components/items/EventSlide'
 import EventSlideVertical from '@/components/items/EventSlideVertical'
+import SelectArea from '@/components/items/SelectArea'
+
 
 
 
 export default {
     name: "Home",
-    components: { EventSlide, SearchBar, EventSlideVertical},
+    components: { EventSlide, SearchBar, EventSlideVertical, SelectArea },
     data: () => ({
         cover: true,
         window: "home"
@@ -195,12 +201,18 @@ export default {
             width: 100%;
             overflow: scroll;
             padding-left: 10px;
-            padding-bottom: 10px;
 
             .search {
                 display: flex;
                 justify-content: center;
                 margin-right: 10px;
+            }
+
+            .select-header {
+                text-align: center;
+                font-size: 20px;
+                font-weight: bold;
+                margin-bottom: 30px;
             }
         }
 

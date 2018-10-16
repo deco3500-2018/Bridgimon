@@ -7,7 +7,10 @@
          :key="index"
         >
             <img :src="card.imgPath">
-            <div class="event-title">{{ card.title }}</div>
+            <div class="event-title">
+                {{ card.title }}
+                <span class="date">{{ card.date }}</span>
+            </div>
             <div class="description">{{ card.discription }}</div>
         </div>
     </div>
@@ -21,6 +24,7 @@ export default {
             {
                 title: "TIMES SQUARE NEW YEAR'S EVE",
                 imgPath: require("../../assets/sample_events/NewYorkNewYear/NEWYOR_ NEW_YEARS_EVE.jpg"),
+                date: "31 December 2018",
                 discription: "Every year as the clock nears midnight on December 31, the eyes of the world turn once more to the dazzling lights and bustling energy of Times Square. Anticipation runs high. New Year's Eve at the symbolic center of New York City has become more than just a celebration - it's a global tradition."
             }
         ]
@@ -32,6 +36,7 @@ export default {
 .event-slide-vertical {
     margin-top: 15px;
     margin-right: 10px;
+    margin-bottom: 10px;
 
     .title {
         font-size: 18px;
@@ -55,6 +60,16 @@ export default {
             margin-bottom: 5px;
             font-weight: bold;
             font-size: 12px;
+            position: relative;
+
+            .date {
+                position: absolute;
+                right: 0;
+                top: 2px;
+                font-size: 10px;
+                font-weight: normal;
+                color: #868a8b;
+            }
         }
 
         .description {

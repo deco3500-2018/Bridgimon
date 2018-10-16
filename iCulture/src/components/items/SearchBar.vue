@@ -1,7 +1,7 @@
 <template>
     <div class="search-bar">
         <img src="../../assets/home/search.svg">
-        <input>
+        <input placeholder="Find new Culture!">
     </div>
 </template>
 
