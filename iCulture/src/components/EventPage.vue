@@ -1,26 +1,24 @@
 <template>
-    <div class="event-page frame">
+
+    <div class="event-info frame">
+      <div class="header">
+        <router-link class="back" :to="{ name: 'EventInfo', params: {page: 'food'} }">
+          <i class="fas fa-times"></i>
+        </router-link>
+        <div class="header-info">
+  
+        </div>
+      </div>
 
       <div class="main">
-        <div class='header'>
-            <router-link class="back" to="/EventList">
-              <i class="fas fa-chevron-left"></i>
-              <p> Back</p>
-            </router-link>
-        </div>
-        <div class="content">
-          <div class="name">
-            <ChinaList :type="'name'"></ChinaList>
-          </div>
-          <div class="date">
-            <ChinaList :type="'date'"></ChinaList>
-          </div>
-        </div>
 
-        <div class="footer">
-          <router-link class="next" to="/EventInfo">
-            <p> NEXT</p>
-          </router-link>
+        <div class="description">
+          <div v-if="event_type == 'attractions'">
+            <AttractionsPage  v-bind:id="id"></AttractionsPage>
+          </div>
+          <div v-if="event_type == 'food'">
+            <FoodPage v-bind:id="id"></FoodPage>
+          </div>
         </div>
       </div>
 
@@ -29,110 +27,99 @@
 
 <script>
 import ChinaList from '@/components/items/ChinaList'
+import Overview from '@/components/items/Overview'
+import FoodList from '@/components/items/FoodList'
+import AttractionsPage from '@/components/items/AttractionsPage'
+import FoodPage from '@/components/items/FoodPage'
+
 export default {
-    name: "EventPage",
-    components: { ChinaList }
+    name: "EventInfo",
+    props: ["type","id"],
+    components: { ChinaList , Overview , FoodList , AttractionsPage , FoodPage},
+    data: function () {
+      return {
+        event_type: this.type
+      }
+    },
+
 }
 </script>
 
 <style lang="scss" scoped>
-.event-page {
-  .main {
-    position:relative;
-    width:100%;
-    border:1px solid black;
-    height:100%;
-    background-image: url("../assets/sample_events/ChineseNewYear/lanterns1.jpg");
-    background-repeat: no-repeat;
-    background-position: 25% 100%;
-    background-size: cover;
+  .event-info {
     .header {
-      margin-top:30px;
-      padding-top:15px;
-      display:flex;
-      justify-content: flex-start;
-      margin-left: 25px;
-      border:0px solid black;
-      :hover {
-        text-decoration: none!important;
-      }
 
+      height:35%;
+      width:100%;
       .back {
-        font-family: 'Playfair Display', serif;
-        margin-top:6px;
-        font-size: 12px;
+        background-color:black;
         color:white;
-        background-color: black;
-        height:30px;
-        width:90px;
-        display:flex;
-        justify-content: center;
-        border:1px solid black;
-        border-radius: 15px;
-        i {
-          margin-top:8px;
-          margin-right:5px;
-
-        }
-        p {
-          margin-top:4px;
+        margin-left:15px;
+        margin-top:25px;
+        padding:0px 8px;
+        position:absolute;
+        font-size: 19px;
+        border-radius:15px;
+        z-index:1;
+        :active {
+          background-color:grey;
         }
       }
-    }
-    .footer {
-      position:absolute;
-      display:flex;
-      bottom:0px;
-      height:120px;
-      width:100%;
-      justify-content: flex-end;
-      text-align: right;
-      :hover {
-        text-decoration: none!important;
-      }
-      .next {
-        margin-top:auto;
-        margin-bottom:auto;
-        margin-right:30px;
+      .header-info {
+
+
+        position: relative;
+
         font-family: 'Playfair Display', serif;
-        font-weight: bold;
-        font-size: 12px;
         color:white;
-        background-color: black;
-        height:40px;
-        width:130px;
-        display:flex;
-        justify-content: center;
+        display: block;
 
-        border-radius: 15px;
-        float:right;
+        height:100%;
+        img {
 
-
-        p {
+          width:100%;
+          height:100%;
+          object-fit: cover;
+          overflow: hidden;
+        }
+        .event-name {
+          font-size:21px;
+        }
+        .event-date {
+          font-size:13px;
+        }
+      }
+      .tabs {
+        background-color: #E8E8E8;
+        display: flex;
+        height:22%;
+        width:100%;
+        position:relative;
+        :hover{
+            box-shadow: none;
+            border-bottom: 2px solid #6e0e0a;
+        }
+        .tab {
+          font-size:11px;
+          color: #A8A8A8;
+          font-family: 'Playfair Display', serif;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           margin:auto;
+          position: relative;
+          height:100%;
+          &.active {
+            color: #6e0e0a;
+            border-bottom:2px solid #6e0e0a;
+          }
         }
-
       }
     }
-    .content {
-      padding-left: 25px;
-      color:white;
-      position:absolute;
-      width:100%;
-      bottom:120px;
-      height:10%;
-      .name {
-        font-family: 'Playfair Display', serif;
-        font-weight: bold;
-        font-size:21px;
-      }
-      .date {
-        font-family: 'Playfair Display', serif;
-        font-size:13px;
-      }
+    .main {
+      overflow: scroll;
+      height:67%;
+      padding:20px;
     }
   }
-
-
-}
 </style>

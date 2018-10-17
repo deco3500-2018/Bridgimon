@@ -10,7 +10,7 @@
 
       <div v-if="type == 'card'">
           <div class="card" v-for="(card, index) in sample_data" :key="index">
-            <router-link to="/EventPage">
+            <router-link to="/EventCover">
             <div class="card-pic">
               <img :src="card.img_path">
             </div>
