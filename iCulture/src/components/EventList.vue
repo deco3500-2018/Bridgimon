@@ -97,6 +97,7 @@ export default {
     }
   }
   .search-bar {
+    width:90%;
     height: 36px;
     color: #B8B8B8;
     border-radius: 10px;
