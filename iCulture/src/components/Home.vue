@@ -170,8 +170,9 @@ export default {
 
             .switch {
                 display: flex;
-                align-items: flex-end;
-                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                justify-content: flex-end;
                 position: relative;
                 width: 40%;
                 color: #FFFFFF;
@@ -183,10 +184,10 @@ export default {
                 }
 
                 .active-border {
-                    position: absolute;
-                    bottom: -2.5px;
+                    // position: absolute;
+                    // bottom: -2.5px;
                     height: 5px;
-                    width: 75%;
+                    width: 100%;
                     border-radius: 5px;
                     background-color: #d74e09;
                 }
