@@ -5,7 +5,7 @@ import EventList from '@/components/EventList'
 import EventCover from '@/components/EventCover'
 import EventInfo from '@/components/EventInfo'
 import EventPage from '@/components/EventPage'
-import RocalEvent from '@/components/RocalEvent'
+import LocalEvent from '@/components/LocalEvent'
 
 
 
@@ -42,9 +42,9 @@ export default new Router({
     },
 
     {
-      path: '/RocalEvent',
-      name: 'RocalEvent',
-      component: RocalEvent
+      path: '/LocalEvent',
+      name: 'LocalEvent',
+      component: LocalEvent
     }
   ]
 })
