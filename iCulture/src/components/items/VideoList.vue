@@ -38,7 +38,7 @@ export default {
     align-items: center;
 
     .video-panel {
-        margin-bottom: 20px;
+        margin-bottom: 75px;
         border-radius: 20px;
         width: 340px;
         height: 180px;

@@ -186,7 +186,7 @@ export default {
                     position: absolute;
                     bottom: -2.5px;
                     height: 5px;
-                    width: 100%;
+                    width: 75%;
                     border-radius: 5px;
                     background-color: #d74e09;
                 }
