@@ -1,6 +1,7 @@
 <template>
     <div class="event-cover frame">
       <div class="main">
+        <img src="../assets/sample_events/ChineseNewYear/lanterns1.jpg">
         <div class='header'>
             <router-link class="back" to="/EventList">
               <i class="fas fa-chevron-left"></i>
@@ -39,10 +40,19 @@ export default {
     width:100%;
     border:1px solid black;
     height:100%;
-    background-image: url("../assets/sample_events/ChineseNewYear/lanterns1.jpg");
     background-repeat: no-repeat;
     background-position: 25% 100%;
     background-size: cover;
+    img {
+      position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      object-fit: cover;
+      overflow: hidden;
+      z-index: 0;
+    }
     .header {
       margin-top:30px;
       padding-top:15px;
@@ -50,6 +60,8 @@ export default {
       justify-content: flex-start;
       margin-left: 25px;
       border:0px solid black;
+      z-index: 2;
+      position: relative;
       :hover {
         text-decoration: none!important;
       }

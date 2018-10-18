@@ -39,40 +39,34 @@ export default {
           id:0,
           name: "Lion Dance",
           event: "Chinese New Year",
-          history:"Filled dumplings were probably a later development in Europe, but Chinese cooks have enjoyed a version known as iiaozi for more than 1,800 years. According to legend, Chinese stuffed dumplings were invented during the Han Dynasty by a man named Zhang Zhongjian",
           img_path: require("../../assets/sample_events/ChineseNewYear/liondance.jpg"),
-          short_description:"Lion dance is a form of traditional dance in Chinese culture and other Asian countries in which performers mimic a lion's movements in a lion costume to bring good luck and fortune. The lion dance is usually performed during the Chinese New Year and other Chinese traditional, cultural and religious festivals.",
-          long_description:"Lion dance is a form of traditional dance in Chinese culture and other Asian countries in which performers mimic a lion's movements in a lion costume to bring good luck and fortune. The lion dance is usually performed during the Chinese New Year and other Chinese traditional, cultural and religious festivals."
+          short_description:"Lion dance is a form of traditional dance in Chinese culture and other Asian countries in which performers mimic a lion's movements in a lion costume to bring good luck and fortune. ",
 
         },
         {
           id:1,
           name: "Dragon Dance",
           event: "Chinese New Year",
-          history:"Filled dumplings were probably a later development in Europe, but Chinese cooks have enjoyed a version known as iiaozi for more than 1,800 years. According to legend, Chinese stuffed dumplings were invented during the Han Dynasty by a man named Zhang Zhongjian",
           img_path: require("../../assets/sample_events/ChineseNewYear/dragondance.jpg"),
-          short_description:"Every Chinese New Year Parade ends with a Dragon Dance. The parades start on New Year's Day and continue for the next fifteen days until the end of the festivities with the Lantern Festival.The Dragon Parade is a highlight of the festivities. The Dragon represents wisdom, power, and wealth and a very important aspect of Chinese Culture. ",
-          long_description:"Lion dance is a form of traditional dance in Chinese culture and other Asian countries in which performers mimic a lion's movements in a lion costume to bring good luck and fortune. The lion dance is usually performed during the Chinese New Year and other Chinese traditional, cultural and religious festivals."
+          short_description:"Dragon dance is a traditional dance form in Chinese culture. The dragon represents wisdom, power and wealth. Like the lion dance it is most often seen in festive celebrations."
 
         },
         {
           id:2,
           name: "Fireworks",
           event: "Chinese New Year",
-          history:"Filled dumplings were probably a later development in Europe, but Chinese cooks have enjoyed a version known as iiaozi for more than 1,800 years. According to legend, Chinese stuffed dumplings were invented during the Han Dynasty by a man named Zhang Zhongjian",
           img_path: require("../../assets/sample_events/ChineseNewYear/fireworks.jpg"),
-          short_description: "This glutinous rice-based cake (known as Kue Keranjang in Bahasa Indonesia) actually can be found year round, but is tradionally consumed during Chinese New Year for good luck. Nian Gao is homonym for 'higher year' which means that you'll be raising yourself in status in the coming year. Nian Gao is made of sticky...",
-          long_description:"Lion dance is a form of traditional dance in Chinese culture and other Asian countries in which performers mimic a lion's movements in a lion costume to bring good luck and fortune. The lion dance is usually performed during the Chinese New Year and other Chinese traditional, cultural and religious festivals."
+          short_description: "It is an important custom to set off firecrackers and fireworks during the Chinese New Year period. Chinese New Year celebrations would not be complete without them.",
+
 
         },
         {
           id:3,
           name: "Giving Red Envelopes",
           event: "Chinese New Year",
-          history:"Filled dumplings were probably a later development in Europe, but Chinese cooks have enjoyed a version known as iiaozi for more than 1,800 years. According to legend, Chinese stuffed dumplings were invented during the Han Dynasty by a man named Zhang Zhongjian",
           img_path: require("../../assets/sample_events/ChineseNewYear/redenvelopes.jpg"),
-          short_description: "This glutinous rice-based cake (known as Kue Keranjang in Bahasa Indonesia) actually can be found year round, but is tradionally consumed during Chinese New Year for good luck. Nian Gao is homonym for 'higher year' which means that you'll be raising yourself in status in the coming year. Nian Gao is made of sticky...",
-          long_description:"Lion dance is a form of traditional dance in Chinese culture and other Asian countries in which performers mimic a lion's movements in a lion costume to bring good luck and fortune. The lion dance is usually performed during the Chinese New Year and other Chinese traditional, cultural and religious festivals."
+          short_description: "Ang Pow red envelopes also known as “red packets” “Ang Pow” “laisee” “lai see” “hung bao” or “Hung-Bao”. They are considered extremely auspicious to receive as a gift and even more auspicious if they contain money."
+
         }
 
 

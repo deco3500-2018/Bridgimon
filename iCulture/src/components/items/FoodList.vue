@@ -40,10 +40,10 @@ export default {
           id:0,
           name: "Dumplings",
           event: "Chinese New Year",
-          history:"Filled dumplings were probably a later development in Europe, but Chinese cooks have enjoyed a version known as iiaozi for more than 1,800 years. According to legend, Chinese stuffed dumplings were invented during the Han Dynasty by a man named Zhang Zhongjian",
+
           img_path: require("../../assets/sample_events/ChineseNewYear/dumplings.jpg"),
-          short_description: "Dumplings or Jiao Zi traditionally resemble ingots or money, hence eating dumplings is believed to usher in wealth. This dish is widely popular in China, especially in North China. Dumplings generally consist of minced meat (pork, diced shrimp)...",
-          long_description: "Dumplings or Jiao Zi traditionally resemble ingots or money, hence eating dumplings is believed to usher in wealth. This dish is widely popular in China, especially in North China. Dumplings generally consist of minced meat (pork, diced shrimp, fish, ground chicken, beef), vegetables, and wrapped in elastic dough skin. They can be cooked by boiling, steaming, frying or baking."
+          short_description: "Jiaozi, or dumplings, are also known as water dumplings, meaning they are boiled in water. It is one of the major staple foods or local specialties in north China and enjoyed by many Chinese."
+
 
         },
         {
@@ -51,7 +51,7 @@ export default {
           name: "Glutinous Rice Cake",
           event: "Chinese New Year",
           img_path: require("../../assets/sample_events/ChineseNewYear/ricecake.jpg"),
-          short_description: "This glutinous rice-based cake (known as Kue Keranjang in Bahasa Indonesia) actually can be found year round, but is tradionally consumed during Chinese New Year for good luck. Nian Gao is homonym for 'higher year' which means that you'll be raising yourself in status in the coming year. Nian Gao is made of sticky..."
+          short_description: "Nian gao (also niangao; nin gou in Cantonese), sometimes translated as year cake or Chinese New Year's cake, is a food prepared from glutinous rice and consumed in Chinese cuisine. While it can be eaten all year round, traditionally it is most popular during Chinese New Year."
 
         },
         {
@@ -59,16 +59,16 @@ export default {
           name: "Fish",
           event: "Chinese New Year",
           img_path: require("../../assets/sample_events/ChineseNewYear/fish.jpg"),
-          short_description: "This glutinous rice-based cake (known as Kue Keranjang in Bahasa Indonesia) actually can be found year round, but is tradionally consumed during Chinese New Year for good luck. Nian Gao is homonym for 'higher year' which means that you'll be raising yourself in status in the coming year. Nian Gao is made of sticky..."
+          short_description: "Steamed fish (清蒸魚), a symbol of auspiciousness according to Chinese tables, one of the most emblematic dishes of Chinese New Year. They are first and foremost supposed to bring luck. These “lucky” preparations are thus served throughout this period, i.e. for 16 days, and more especially on New Year’s Eve."
 
         },
         {
           id:3,
-          name: "Sweet Rice Bowl",
+          name: "Sweet Rice Ball",
           event: "Chinese New Year",
           img_path: require("../../assets/sample_events/ChineseNewYear/riceball.jpg"),
-          short_description: "This glutinous rice-based cake (known as Kue Keranjang in Bahasa Indonesia) actually can be found year round, but is tradionally consumed during Chinese New Year for good luck. Nian Gao is homonym for 'higher year' which means that you'll be raising yourself in status in the coming year. Nian Gao is made of sticky...",
-          long_description: "This glutinous rice-based cake (known as Kue Keranjang in Bahasa Indonesia) actually can be found year round, but is tradionally consumed during Chinese New Year for good luck. Nian Gao is homonym for 'higher year' which means that you'll be raising yourself in status in the coming year. Nian Gao is made of sticky..."
+          short_description: "汤圆 (tāng yuán) are glutinous rice balls stuffed with varying flavors of paste filling. It is a traditional Chinese dessert, a light yet tasty option for both festivals or for an after-meal desserts with family."
+
 
         }
 

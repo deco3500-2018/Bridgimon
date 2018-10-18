@@ -2,11 +2,11 @@
 
     <div class="event-info frame">
       <div class="header">
-        <router-link class="back" :to="{ name: 'EventInfo', params: {page: 'food'} }">
+        <router-link class="back" :to="{ name: 'EventInfo', params: {page: event_type} }">
           <i class="fas fa-times"></i>
         </router-link>
         <div class="header-info">
-  
+          <img :src="background">
         </div>
       </div>
 
@@ -14,10 +14,10 @@
 
         <div class="description">
           <div v-if="event_type == 'attractions'">
-            <AttractionsPage  v-bind:id="id"></AttractionsPage>
+            <AttractionsPage  v-bind:id="id" @changeImagePath="changeBackground"></AttractionsPage>
           </div>
           <div v-if="event_type == 'food'">
-            <FoodPage v-bind:id="id"></FoodPage>
+            <FoodPage v-bind:id="id" @changeImagePath="changeBackground"></FoodPage>
           </div>
         </div>
       </div>
@@ -38,9 +38,15 @@ export default {
     components: { ChinaList , Overview , FoodList , AttractionsPage , FoodPage},
     data: function () {
       return {
-        event_type: this.type
+        event_type: this.type,
+        background: ""
       }
     },
+    methods: {
+      changeBackground(imagePath) {
+        this.background = imagePath;
+      }
+    }
 
 }
 </script>

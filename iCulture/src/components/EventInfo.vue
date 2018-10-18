@@ -7,12 +7,14 @@
         </router-link>
 
         <div class="header-info">
+
           <div class="event-name">
             <ChinaList :type="'name'"></ChinaList>
           </div>
           <div class="event-date">
             <ChinaList :type="'date'"></ChinaList>
           </div>
+<img src="../assets/sample_events/ChineseNewYear/lanterns2-blur.png">
         </div>
         <div class="tabs">
           <div class="tab col-sm-3" :class="{active: tab == 'overview'}" @click="tab = 'overview'">
@@ -94,16 +96,30 @@ export default {
         font-family: 'Playfair Display', serif;
         color:white;
         display: block;
-        background-image: url("../assets/sample_events/ChineseNewYear/lanterns2-blur.png");
+    
         background-repeat: no-repeat;
         background-position: 20% 100%;
         background-size: cover;
         height:78%;
+        img {
+          position: absolute;
+          top:0;
+          left:0;
+          width:100%;
+          height:100%;
+          object-fit: cover;
+          overflow: hidden;
+          z-index: 0;
+        }
         .event-name {
+          position: relative;
           font-size:21px;
+          z-index: 1;
         }
         .event-date {
+          position: relative;
           font-size:13px;
+          z-index: 1;
         }
       }
       .tabs {
