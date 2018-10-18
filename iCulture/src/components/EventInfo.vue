@@ -39,7 +39,7 @@
 
         </div>
         <div class='videos' v-else-if="tab == 'videos'">
-
+          <VideoList></VideoList>
         </div>
         <div class='food' v-else-if="tab == 'food'">
           <FoodList></FoodList>
@@ -57,11 +57,12 @@ import ChinaList from '@/components/items/ChinaList'
 import Overview from '@/components/items/Overview'
 import FoodList from '@/components/items/FoodList'
 import AttractionsList from '@/components/items/AttractionsList'
+import VideoList from '@/components/items/VideoList'
 
 export default {
     name: "EventInfo",
     props: ["page"],
-    components: { ChinaList , Overview , FoodList , AttractionsList },
+    components: { ChinaList , Overview , FoodList , AttractionsList, VideoList },
     data: function () {
       return {
         tab: this.page
