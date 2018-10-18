@@ -1,6 +1,11 @@
 <template>
     <div class="event-info frame">
       <div class="header">
+
+        <router-link class="back" to="/EventCover">
+        <i class="fas fa-times"></i>
+        </router-link>
+
         <div class="header-info">
           <div class="event-name">
             <ChinaList :type="'name'"></ChinaList>
@@ -22,22 +27,23 @@
             <div class="tab col-sm-3" :class="{active: tab == 'attractions'}" @click="tab = 'attractions'">
             Attractions
           </div>
-
         </div>
       </div>
 
       <div class="main">
+
         <div class='overview' v-if="tab == 'overview'">
           <Overview></Overview>
-        </div>
-        <div v-if="tab == 'videos'">
 
         </div>
-        <div v-if="tab == 'food'">
-          <Food></Food>
-        </div>
-        <div v-if="tab == 'attractions'">
+        <div class='videos' v-else-if="tab == 'videos'">
 
+        </div>
+        <div class='food' v-else-if="tab == 'food'">
+          <FoodList></FoodList>
+        </div>
+        <div class='attractions' v-else-if="tab == 'attractions'">
+          <AttractionsList :type="'cover'"></AttractionsList>
         </div>
       </div>
 
@@ -47,14 +53,18 @@
 <script>
 import ChinaList from '@/components/items/ChinaList'
 import Overview from '@/components/items/Overview'
-import Food from '@/components/items/Food'
+import FoodList from '@/components/items/FoodList'
+import AttractionsList from '@/components/items/AttractionsList'
 
 export default {
     name: "EventInfo",
-    components: { ChinaList , Overview , Food},
-    data: () => ({
-        tab: "overview"
-    })
+    props: ["page"],
+    components: { ChinaList , Overview , FoodList , AttractionsList },
+    data: function () {
+      return {
+        tab: this.page
+      }
+    }
 }
 </script>
 
@@ -63,6 +73,20 @@ export default {
     .header {
       height:33%;
       width:100%;
+      .back {
+        background-color:black;
+        color:white;
+        margin-left:15px;
+        margin-top:25px;
+        padding:0px 8px;
+        position:absolute;
+        font-size: 19px;
+        border-radius:15px;
+        z-index:1;
+        :active {
+          background-color:grey;
+        }
+      }
       .header-info {
         padding-top:90px;
         position: relative;
@@ -88,12 +112,10 @@ export default {
         height:22%;
         width:100%;
         position:relative;
-
         :hover{
             box-shadow: none;
             border-bottom: 2px solid #6e0e0a;
         }
-
         .tab {
           font-size:11px;
           color: #A8A8A8;
@@ -108,22 +130,24 @@ export default {
             color: #6e0e0a;
             border-bottom:2px solid #6e0e0a;
           }
-
         }
-
-
       }
     }
     .main {
       overflow: scroll;
       height:67%;
-  
+
       .overview {
         font-size:12px;
         padding:15px 12px;
         text-align: justify;
       }
+      .attractions {
+        margin-top:10px;
+      }
+      .food {
+        margin-top:10px;
+      }
     }
-
   }
 </style>
