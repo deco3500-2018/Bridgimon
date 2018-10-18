@@ -1,19 +1,34 @@
 <template>
   <div class="rocal-event frame">
+
+    <!-- Google Map -->
     <div id="map"></div>
+
+    <!-- Buck Button -->
     <router-link class="back" to="/EventList">
         <i class="fas fa-chevron-left"></i>
-        <p> Back</p>
+        <p>Back</p>
     </router-link>
+    <div class="rocal-panel-area">
+        <RocalEventPanel></RocalEventPanel>
+    </div>
   </div>
 </template>
 
 <script>
+import RocalEventPanel from '@/components/items/RocalEventPanel'
 
 export default {
   name: "RocalEvent",
+  components: { RocalEventPanel },
   data: () => ({
       map: null,
+      sample_data: [
+          {
+              name: "King George Square",
+              
+          }
+      ]
   }),
   mounted() {
     this.map = new google.maps.Map(document.getElementById('map'), {
@@ -64,6 +79,12 @@ export default {
         p {
           margin-top:4px;
         }
+    }
+
+    .rocal-panel-area {
+        position: absolute;
+        width: 100%;
+        bottom: 75px;
     }
 }
 </style>

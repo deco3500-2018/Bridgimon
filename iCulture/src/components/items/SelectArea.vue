@@ -42,19 +42,19 @@ export default {
         sample_countries: [
             {
                 name: "CHINA",
-                imagePath: "" // require("../")
+                imagePath: require("../../assets/home/Countries/china.svg")
             },
             {
                 name: "INDIA",
-                imagePath: "" // require("../")
+                imagePath: require("../../assets/home/Countries/india.svg")
             },
             {
                 name: "INDONESIA",
-                imagePath: "" // require("../")
+                imagePath: require("../../assets/home/Countries/indonesia.svg")
             },
             {
                 name: "JAPAN",
-                imagePath: "" // require("../")
+                imagePath: require("../../assets/home/Countries/japan.svg")
             }
         ]
     }),

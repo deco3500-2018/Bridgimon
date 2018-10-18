@@ -5,7 +5,7 @@
             <span class="see-more">See more ></span>
         </div>
         <div class="slide">
-            <div class="card" v-for="(card, index) in sample_data" :key="index">
+            <div class="card" v-for="(card, index) in sample_data" :key="index" @click="moveEventPage(card.name)">
                 <img :src="card.img_path">
                 <div class="name">{{ card.name }}</div>
                 <div
@@ -61,7 +61,18 @@ export default {
                 date: "27 December 2018"
             }
         ]
-    })
+    }),
+    methods: {
+        moveEventPage(event) {
+            switch(event) {
+                case "Chinese New Year": 
+                    this.$router.push("/EventPage")
+                    break
+                default:
+                    break
+            }
+        }
+    }
 }
 </script>
 
