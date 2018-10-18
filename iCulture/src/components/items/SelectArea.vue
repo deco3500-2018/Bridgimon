@@ -33,11 +33,6 @@
              :country="country"
             ></CountryPanel>
         </div>
-
-        <!-- <Button
-         class="select-button"
-         @click="changeSelection"
-        > SELECT</Button> -->
     </div>
 </template>
 
