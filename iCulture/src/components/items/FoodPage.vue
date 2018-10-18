@@ -52,7 +52,7 @@
               Best Places To Eat
             </div>
             <div class="page-food-places">
-              <div class='card-places' v-for="(card,index) in sample_data[id]">
+              <div class='card-places' v-for="(card,index) in sample_data[id]" :key="index">
               </div>
             </div>
           </div>
