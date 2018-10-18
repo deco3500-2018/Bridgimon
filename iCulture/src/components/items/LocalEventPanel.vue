@@ -21,7 +21,7 @@ export default {
         imagePath: ""
     }),
     created() {
-        switch(event.id) {
+        switch(this.event.id) {
             case 0:
                 this.imagePath = require("../../assets/LocalPlace/KingGeorgeSquare.jpg")
                 break
