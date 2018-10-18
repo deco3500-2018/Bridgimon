@@ -1,6 +1,6 @@
 <template>
 
-    <div class="event-info frame">
+    <div class="event-page frame">
       <div class="header">
         <router-link class="back" :to="{ name: 'EventInfo', params: {page: event_type} }">
           <i class="fas fa-times"></i>
@@ -52,7 +52,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .event-info {
+  .event-page {
     .header {
 
       height:35%;
