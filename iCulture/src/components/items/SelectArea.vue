@@ -4,13 +4,23 @@
          class="select-continent"
          v-if="select == 'Continent'"
         >
-            <div class="continent-panel">
-                ASIA
-            </div>
-            <div class="continent-info">
-                <div class="number-countries">48 Countries</div>
-                <div class="number-event">4 upcoming near events</div>
-            </div>
+
+            <swiper ref="mySwiper" :options="swiperOption">
+                <!-- slides -->
+                <swiper-slide
+                 v-for="(slide, index) in sample_continents"
+                 :key="index"
+                >   
+                    <div class="geo-panel" @click="changeSelection">
+                        <img :src="slide.imagePath">
+                        <div>{{ slide.name }}</div>
+                    </div>
+                    <div class="continent-info">
+                        <div class="number-countries">48 Countries</div>
+                        <div class="number-event">4 upcoming near events</div>
+                    </div>
+                </swiper-slide>
+            </swiper>
         </div>
 
         <div 
@@ -24,21 +34,45 @@
             ></CountryPanel>
         </div>
 
-        <Button
+        <!-- <Button
          class="select-button"
          @click="changeSelection"
-        > SELECT</Button>
+        > SELECT</Button> -->
     </div>
 </template>
 
 <script>
+import "../../assets/css/swiper.css";
+import { swiper, swiperSlide } from 'vue-awesome-swiper'
 import CountryPanel from '@/components/items/CountryPanel'
 
 export default {
     name: "SelectArea",
-    components: { CountryPanel },
+    components: { CountryPanel, swiper, swiperSlide },
     data: () => ({
         select: "Continent",
+        sample_continents: [
+            {
+                name: "AFRICA",
+                imagePath: require("../../assets/home/Continents/africa.svg")
+            },
+            {
+                name: "AMERICA",
+                imagePath: require("../../assets/home/Continents/america.svg")
+            },
+            {
+                name: "ASIA",
+                imagePath: require("../../assets/home/Continents/Asia.svg")
+            },
+            {
+                name: "AUSTRALIA",
+                imagePath: require("../../assets/home/Continents/australia.svg")
+            },
+            {
+                name: "EUROPE",
+                imagePath: require("../../assets/home/Continents/europe.svg")
+            },
+        ],
         sample_countries: [
             {
                 name: "CHINA",
@@ -56,8 +90,19 @@ export default {
                 name: "JAPAN",
                 imagePath: require("../../assets/home/Countries/japan.svg")
             }
-        ]
+        ],
+        swiperSlides: [1, 2, 3, 4, 5],
+        swiperOption: {
+            slidesPerView: 2,
+            centeredSlides: true,
+            spaceBetween: 10,
+        }
     }),
+    computed: {
+        swiper() {
+            return this.$refs.mySwiper.swiper
+        }
+    },
     methods: {
         changeSelection() {
             switch(this.select){
@@ -71,11 +116,16 @@ export default {
                     this.select = "Continent"
             }
         }
+    },
+    mounted() {
+        this.swiper.slideTo(2, 1000, false)
     }
 }
 </script>
 
 <style lang="scss" scoped>
+
+
 .select-area {
     display: flex;
     flex-direction: column;
@@ -140,5 +190,39 @@ export default {
         color: #FFFFFF;
         font-size: 16px;
     }
+
+    .swiper-container {
+        width: 100%;
+        height: 300px;
+        
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            flex-direction: column;
+
+            .geo-panel {
+                width: 100%;
+                height: 230px;
+                background-color: #F0F0F0;
+                border-radius: 10px;
+                font-weight: bold;
+            }
+        }
+    }
+    
 }
 </style>
