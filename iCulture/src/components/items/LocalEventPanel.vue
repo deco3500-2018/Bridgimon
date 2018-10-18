@@ -9,15 +9,29 @@
         </div>
         <div class="date">{{ event.date }}</div>
         <div class="time">{{ event.time }}</div>
-        <img :src="event.imagePath">
+        <img :src="imagePath">
     </div>
 </template>
 
 <script>
 export default {
     name: "LocalEventPanel",
-    props: ["event"]
-
+    props: ["event"],
+    data: () => ({
+        imagePath: ""
+    }),
+    created() {
+        switch(event.id) {
+            case 0:
+                this.imagePath = require("../../assets/LocalPlace/KingGeorgeSquare.jpg")
+                break
+            case 1: 
+                this.imagePath = require("../../assets/LocalPlace/AlbertStreet.jpg")
+                break
+            case 2:
+                this.imagePath = require("../../assets/LocalPlace/RomaStreetParkland.jpg")
+        }
+    }
 }
 </script>
 
