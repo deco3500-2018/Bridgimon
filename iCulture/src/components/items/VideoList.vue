@@ -2,16 +2,16 @@
     <div class="video-list">
         <div class="video-panel" 
          v-for="(videoPath, index) in sample_videoPaths"
+         
          :key="index">
             <iframe
+             @click.stop="goYoutube"
              :src="videoPath"
              frameborder="0" 
-             gesture="media" 
-             allow="encrypted-media" 
+             allow="vr"
              allowfullscreen
             ></iframe>
         </div>
-        
     </div>
 </template>
 
@@ -24,7 +24,12 @@ export default {
             "https://www.youtube.com/embed/qFBnUhIwHUQ?ecver=2",
             "https://www.youtube.com/embed/LAYqf_KTlUQ?ecver=2"
         ]
-    })
+    }),
+    methods: {
+        goYoutube() {
+            console.log("test");
+        }
+    }
 }
 </script>
 
@@ -42,7 +47,7 @@ export default {
         border-radius: 20px;
         width: 340px;
         height: 180px;
-        overflow: hidden;
+        overflow-x: hidden;
 
         iframe {
             width: 340px;
