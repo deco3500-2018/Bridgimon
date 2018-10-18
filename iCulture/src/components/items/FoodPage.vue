@@ -24,10 +24,12 @@
             <div class="page-food-subname">
               Photos
             </div>
-            <PhotoGallery  v-bind:id="id" ></PhotoGallery>
+            <div class="page-food-pics">
+              <PhotoGallery v-bind:id="id" ></PhotoGallery>
+            </div>
           </div>
           <br>
-          <div class="page-details">
+          <!-- <div class="page-details">
             <div class="page-food-subname">
               Best Places To Eat
             </div>
@@ -35,7 +37,7 @@
               <div class='card-places' v-for="(card,index) in sample_data[id]" :key="index">
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
 
@@ -171,6 +173,7 @@ To make good on his promise, Dong Fangshuo took over the street stall of a sooth
         white-space: pre-line;
       }
       .page-food-pics {
+        
         width: 100%;
         overflow-x: auto;
         white-space: nowrap;
