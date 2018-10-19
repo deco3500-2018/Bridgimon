@@ -26,7 +26,6 @@ html, body {
   border-bottom: 5px solid #000000;
   border-left: 5px solid #000000;
   border-right: 5px solid #000000;
-  border-radius: 20px;
   color: #040f16;
   background-color: #fff;
 }
