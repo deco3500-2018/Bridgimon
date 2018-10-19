@@ -41,7 +41,7 @@ export default {
       color:white;
       font-size: 15px;
       width: 320px;
-      bottom:75px;
+      bottom:35px;
       padding-top:9px;
       position:fixed;
       height: 40px;

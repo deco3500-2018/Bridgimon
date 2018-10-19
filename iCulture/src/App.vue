@@ -23,7 +23,7 @@ html, body {
   width: 375px;
   height: 667px;
   border-top: 70px solid #000000;
-  border-bottom: 0px solid #000000;
+  border-bottom: 5px solid #000000;
   border-left: 5px solid #000000;
   border-right: 5px solid #000000;
   border-radius: 20px;
