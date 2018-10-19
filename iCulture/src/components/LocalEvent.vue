@@ -5,16 +5,18 @@
     <div id="map"></div>
 
     <!-- Buck Button -->
-    <router-link class="back" to="/EventList">
+    <router-link class="back" :to="{ name: 'EventInfo', params: {page:'overview'} }">
         <i class="fas fa-chevron-left"></i>
         <p>Back</p>
     </router-link>
     <div class="local-panel-area">
-        <LocalEventPanel 
+        <LocalEventPanel
          :event="panelEvent"
          v-if="panelEvent != null"
          @cancel="cancel"
+         @calendar="calendar"
         ></LocalEventPanel>
+
     </div>
   </div>
 </template>
@@ -77,6 +79,10 @@ export default {
       },
       cancel() {
           this.panelEvent = null
+      },
+      calendar() {
+
+        confirm("test")
       }
   },
   mounted() {
@@ -138,6 +144,3 @@ export default {
     }
 }
 </style>
-
-
-

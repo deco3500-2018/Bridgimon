@@ -5,7 +5,7 @@
         <div class='header'>
             <router-link class="back" to="/EventList">
               <i class="fas fa-chevron-left"></i>
-              <p> Back</p>
+              <p>China</p>
             </router-link>
         </div>
         <div class="content">

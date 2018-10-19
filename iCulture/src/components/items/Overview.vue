@@ -1,6 +1,13 @@
 <template>
     <div class="overview">
       {{ sample_data[0].information }}
+
+        <router-link :to="{ name: 'LocalEvent', params: {} }">
+          <div class="button-nearyou">
+            <h6>Events Near You</h6>
+          </div>
+        </router-link>
+
     </div>
 
 </template>
@@ -25,7 +32,23 @@ export default {
 <style lang="scss" scoped>
   .overview {
     font-family: 'Open Sans', sans-serif;
-    margin-bottom: 100px;
+    margin-top:-30px;
+    position:relative;
+    margin-bottom:25px;
     white-space: pre-line;
+    .button-nearyou {
+      font-family: 'Playfair Display', serif;
+      color:white;
+      font-size: 15px;
+      width: 320px;
+      bottom:45px;
+      padding-top:9px;
+      position:fixed;
+      height: 40px;
+      background-color: black;
+      text-align:center;
+      border:1px solid black;
+    }
   }
+
 </style>

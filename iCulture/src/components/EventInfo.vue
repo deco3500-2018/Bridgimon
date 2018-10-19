@@ -67,6 +67,11 @@ export default {
       return {
         tab: this.page
       }
+    },
+    created() {
+      if(this.page == null) {
+        this.tab = "overview"
+      }
     }
 }
 </script>
@@ -97,7 +102,7 @@ export default {
         font-family: 'Playfair Display', serif;
         color:white;
         display: block;
-    
+
         background-repeat: no-repeat;
         background-position: 20% 100%;
         background-size: cover;

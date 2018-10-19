@@ -65,8 +65,8 @@ export default {
     methods: {
         moveEventPage(event) {
             switch(event) {
-                case "Chinese New Year": 
-                    this.$router.push("/EventPage")
+                case "Chinese New Year":
+                    this.$router.push("/EventCover")
                     break
                 default:
                     break

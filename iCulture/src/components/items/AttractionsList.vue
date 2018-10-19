@@ -106,6 +106,7 @@ export default {
         text-align: justify;
       }
       .page-food-pics {
+        z-index: 10;
         width: 100%;
         overflow-x: auto;
         white-space: nowrap;

@@ -3,6 +3,9 @@
         <div class="cancel" @click="$emit('cancel')">
             <i class="fas fa-times"></i>
         </div>
+        <div class="add-to-calendar" @click="$emit('calendar')">
+          <i class="fas fa-times"></i>
+        </div>
         <div class="title">
             {{ event.name }}
             <span>{{ event.howFar }}</span>
@@ -10,6 +13,7 @@
         <div class="date">{{ event.date }}</div>
         <div class="time">{{ event.time }}</div>
         <img :src="imagePath">
+
     </div>
 </template>
 
@@ -25,7 +29,7 @@ export default {
             case 0:
                 this.imagePath = require("../../assets/LocalPlace/KingGeorgeSquare.jpg")
                 break
-            case 1: 
+            case 1:
                 this.imagePath = require("../../assets/LocalPlace/AlbertStreet.jpg")
                 break
             case 2:
@@ -92,5 +96,3 @@ export default {
     }
 }
 </style>
-
-

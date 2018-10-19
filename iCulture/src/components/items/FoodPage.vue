@@ -173,7 +173,7 @@ To make good on his promise, Dong Fangshuo took over the street stall of a sooth
         white-space: pre-line;
       }
       .page-food-pics {
-        
+        z-index: 10;
         width: 100%;
         overflow-x: auto;
         white-space: nowrap;
