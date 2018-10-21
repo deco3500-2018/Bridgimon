@@ -82,7 +82,7 @@ export default {
       },
       calendar() {
 
-        confirm("test")
+        alert("This event has been added to your calendar!")
       }
   },
   mounted() {

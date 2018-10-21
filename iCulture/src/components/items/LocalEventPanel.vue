@@ -3,8 +3,8 @@
         <div class="cancel" @click="$emit('cancel')">
             <i class="fas fa-times"></i>
         </div>
-        <div class="add-to-calendar" @click="$emit('calendar')">
-          <i class="fas fa-times"></i>
+        <div class="add-calendar" @click="$emit('calendar')">
+          <i class="fas fa-calendar-alt"></i>
         </div>
         <div class="title">
             {{ event.name }}
@@ -15,6 +15,7 @@
         <img :src="imagePath">
 
     </div>
+    
 </template>
 
 <script>
@@ -63,6 +64,19 @@ export default {
         justify-content: center;
         align-items: center;
         border-radius: 20px;
+    }
+    .add-calendar {
+      background-color:black;
+      color:white;
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 10px;
+      right: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
     }
 
     .title {
