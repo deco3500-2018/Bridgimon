@@ -17,6 +17,7 @@ html, body {
   justify-content: center;
   width: 100%;
   height: 100%;
+  background-color: #d74e09;
 }
 
 .frame {
