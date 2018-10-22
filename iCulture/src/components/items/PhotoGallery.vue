@@ -1,17 +1,13 @@
 <template>
   <div class="page-food-pics">
-
-    <silentbox-group>
-
-      <div class="card-food" v-for="(card,index) in sample_data[id].images">
+      <div class="card-food" v-for="(card,index) in sample_data[id].images" :key="index">
         <div class="food-pic">
-
-            <silentbox-item :src='card'>
-                <img :src='card'>
-            </silentbox-item>
+          <img :src='card' @click="expand(card)">
         </div>
       </div>
-    </silentbox-group>
+      <div class="expand-image" v-if="expandImage != null" @click="expand(null)">
+        <img :src="expandImage">
+      </div>
   </div>
 </template>
 
@@ -22,6 +18,7 @@ export default {
     name: "PhotoGallery",
     props: ['id'],
     data: () => ({
+      expandImage: null,
       sample_data: [
         {
           id:0,
@@ -121,12 +118,16 @@ export default {
 
       ]
   }),
+  methods: {
+    expand(image) {
+      this.expandImage = image
+    }
+  }
 }
 </script>
 
 <style lang="scss" scoped>
 .page-food-pics {
-
   width: 100%;
   height:100%;
   overflow-x: auto;
@@ -154,6 +155,27 @@ export default {
       height:100%;
       object-fit: cover;
       overflow: hidden;
+    }
+  }
+
+  .expand-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 100;
+
+    img {
+      max-width: calc(100vw - 20px);
+      max-height: calc(100vh - 20px);
     }
   }
 }
