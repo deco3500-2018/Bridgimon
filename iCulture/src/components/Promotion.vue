@@ -13,9 +13,7 @@
                 </div>
                 <div class="description">
                   <p>iCulture is a mobile application designed to build connections between those willing to share their culture and those who wish to learn. The application is a tool for navigating the different cultures of the world and learning about them through the culturally signficant events. By breaking down the event into its various aspects such as what food is being eaten, we can better help the user to develop knowledge that covers a broader range.</p>
-
                 </div>
-
               </div>
             </div>
           </div>
@@ -27,7 +25,9 @@
               <p>Check Out Our Promotional Poster!</p>
             </div>
             <div class="poster-pic">
-              <img src="../assets/other/DECO3500-poster.jpg">
+              <a href="https://github.com/deco3500-2018/Bridgimon/blob/master/iCulture/src/assets/other/DECO3500-poster.jpg">
+                <img src="../assets/other/DECO3500-poster.jpg">
+              </a>
             </div>
           </div>
 
