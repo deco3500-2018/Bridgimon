@@ -6,6 +6,7 @@ import EventCover from '@/components/EventCover'
 import EventInfo from '@/components/EventInfo'
 import EventPage from '@/components/EventPage'
 import LocalEvent from '@/components/LocalEvent'
+import Promotion from '@/components/Promotion'
 
 
 
@@ -14,7 +15,7 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/',
+      path: '/Home',
       name: 'Home',
       component: Home
     },
@@ -45,6 +46,11 @@ export default new Router({
       path: '/LocalEvent',
       name: 'LocalEvent',
       component: LocalEvent
-    }
+    },
+    {
+      path: '/',
+      name: 'Promotion',
+      component: Promotion
+    },
   ]
 })
