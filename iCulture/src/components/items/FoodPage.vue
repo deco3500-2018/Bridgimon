@@ -25,7 +25,7 @@
               Photos
             </div>
             <div class="page-food-pics">
-              <PhotoGallery v-bind:id="id" ></PhotoGallery>
+              <PhotoGallery v-bind:id="id" @expandImage="expandImage"></PhotoGallery>
             </div>
           </div>
           <br>
@@ -38,6 +38,9 @@
               </div>
             </div>
           </div> -->
+        </div>
+        <div class="expand-image" v-if="expandImagePath != null" @click="expandImage(null)">
+          <img :src="expandImagePath">
         </div>
       </div>
 
@@ -130,12 +133,18 @@ To make good on his promise, Dong Fangshuo took over the street stall of a sooth
         }
 
 
-      ]
+      ],
+      expandImagePath: null
   }),
   created() {
     var imagePath = this.sample_data[this.id].img_path;
 
     this.$emit("changeImagePath", imagePath)
+  },
+  methods: {
+    expandImage(path) {
+      this.expandImagePath = path
+    }
   }
 }
 
@@ -258,5 +267,25 @@ To make good on his promise, Dong Fangshuo took over the street stall of a sooth
       }
     }
 }
+.expand-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 100;
+
+    img {
+      max-width: calc(100vw - 20px);
+      max-height: calc(100vh - 20px);
+    }
+  }
 }
 </style>
