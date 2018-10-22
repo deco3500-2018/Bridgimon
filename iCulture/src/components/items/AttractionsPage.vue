@@ -142,6 +142,8 @@ export default {
 
 <style lang="scss" scoped>
 .food {
+  z-index: -1;
+  
   .header-pic {
     img {
       width:100%;

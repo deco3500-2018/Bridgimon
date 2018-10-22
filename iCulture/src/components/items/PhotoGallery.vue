@@ -132,7 +132,6 @@ export default {
   overflow-x: auto;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
-  z-index: 100;
   .card-food {
 
     display:inline-block;
