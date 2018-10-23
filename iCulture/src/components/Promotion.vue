@@ -143,6 +143,7 @@ export default {
       }
     }
     .footer-title {
+      font-family: 'Ubuntu', serif;
       text-align: center;
       .title {
         font-size:26px;
@@ -153,8 +154,9 @@ export default {
       }
     }
     .footer {
+      font-family: 'Ubuntu', serif;
       height:200px;
-      // border:1px solid black;
+
       display: flex;
       justify-content: center;
       .all-member{
@@ -173,7 +175,6 @@ export default {
       padding-bottom:30px;
     }
     .links {
-
       font-family: 'Ubuntu', serif;
       font-size:18px;
       height:400px;
