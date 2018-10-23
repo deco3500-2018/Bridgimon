@@ -25,7 +25,7 @@
               <p>Check Out Our Promotional Poster!</p>
             </div>
             <div class="poster-pic">
-              <a href="http://localhost:8080/static/img/DECO3500-poster.36b99ed.jpg">
+              <a href="https://deco3500-2018.github.io/Bridgimon/iCulture/dist/static/img/DECO3500-poster.36b99ed.jpg">
                 <img src="../assets/other/DECO3500-poster.jpg">
               </a>
             </div>
@@ -92,6 +92,7 @@ export default {
     height:100vh;
     width:100vw;
     .main-content {
+      margin-top:50px;
       padding-top:20px;
       display:flex;
       justify-content: center;
