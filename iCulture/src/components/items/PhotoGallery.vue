@@ -2,11 +2,8 @@
   <div class="page-food-pics">
       <div class="card-food" v-for="(card,index) in sample_data[id].images" :key="index">
         <div class="food-pic">
-          <img :src='card' @click="expand(card)">
+          <img :src='card' @click="$emit('expandImage', card)">
         </div>
-      </div>
-      <div class="expand-image" v-if="expandImage != null" @click="expand(null)">
-        <img :src="expandImage">
       </div>
   </div>
 </template>
@@ -158,25 +155,25 @@ export default {
     }
   }
 
-  .expand-image {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    z-index: 100;
+  // .expand-image {
+  //   position: fixed;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100vw;
+  //   height: 100vh;
+  //   display: flex;
+  //   -webkit-box-pack: center;
+  //   -ms-flex-pack: center;
+  //   justify-content: center;
+  //   -webkit-box-align: center;
+  //   -ms-flex-align: center;
+  //   align-items: center;
+  //   z-index: 100;
 
-    img {
-      max-width: calc(100vw - 20px);
-      max-height: calc(100vh - 20px);
-    }
-  }
+  //   img {
+  //     max-width: calc(100vw - 20px);
+  //     max-height: calc(100vh - 20px);
+  //   }
+  // }
 }
 </style>

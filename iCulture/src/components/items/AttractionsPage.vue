@@ -24,7 +24,7 @@
             <div class="page-food-subname">
               Photos
             </div>
-            <PhotoGallery  v-bind:id="id+4" ></PhotoGallery>
+            <PhotoGallery  v-bind:id="id+4" @expandImage="expandImage"></PhotoGallery>
           </div>
           <br>
           <!-- <div class="page-details">
@@ -36,6 +36,9 @@
               </div>
             </div>
           </div> -->
+        </div>
+        <div class="expand-image" v-if="expandImagePath != null" @click="expandImage(null)">
+          <img :src="expandImagePath">
         </div>
       </div>
 
@@ -129,12 +132,18 @@ export default {
         }
 
 
-      ]
+      ],
+      expandImagePath: null
   }),
   created() {
     var imagePath = this.sample_data[this.id].img_path;
 
     this.$emit("changeImagePath", imagePath)
+  },
+  methods: {
+    expandImage(path) {
+      this.expandImagePath = path
+    }
   }
 }
 </script>
@@ -258,5 +267,27 @@ export default {
       }
     }
 }
+
+
+  .expand-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 100;
+
+    img {
+      max-width: calc(100vw - 20px);
+      max-height: calc(100vh - 20px);
+    }
+  }
 }
 </style>
