@@ -4,7 +4,7 @@
     <div class="event-list frame">
 
       <div class='header'>
-          <router-link class="back" to="/">
+          <router-link class="back" to="/Home">
             <i class="fas fa-chevron-left"></i>
             <p> Back</p>
           </router-link>

@@ -25,7 +25,7 @@
               <p>Check Out Our Promotional Poster!</p>
             </div>
             <div class="poster-pic">
-              <a href="https://github.com/deco3500-2018/Bridgimon/blob/master/iCulture/src/assets/other/DECO3500-poster.jpg">
+              <a href="http://localhost:8080/static/img/DECO3500-poster.36b99ed.jpg">
                 <img src="../assets/other/DECO3500-poster.jpg">
               </a>
             </div>
