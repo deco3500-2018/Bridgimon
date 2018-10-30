@@ -58,7 +58,30 @@ Go to this link [bit.ly/iCulture2018](bit.ly/iCulture2018) , and choose to try t
 ## Workload Distribution
 The design team from the beginning stated that all work would be completed evenly, however a breakdown has been supplied below.
 
-* **Nipun Amarasinghe** - Interviews, Gathering of Content (Text, Images & Video) for Proof of Concept Prototype, Design of low-fid Wireframes, Documentation
-* **Taiki Koyama** - Coding of Proof of Concept Mobile Application, Interviews, Design of low-fid Wireframes, Documentation
-* **Luthfan Rasyad Maulana** - Gathering of Content (Text, Images & Video) for Proof of Concept Prototype, Coding of Proof of Concept Mobile Application, Interviews, Design of low-fid Wireframes, Documentation
-* **Ahmad Hilman Prasetya** - Gathering of Content (Text, Images & Video) for Proof of Concept Prototype, Creation of Poster, Creation of Brochure, Interviews, Creating of High Fidelity Mockups, Design of low-fid Wireframes, Documentation
+**Nipun Amarasinghe** 
+*Interviews, 
+*Gathering of Content (Text, Images & Video) for Proof of Concept Prototype, 
+*Design of low-fid Wireframes, 
+*Documentation
+
+**Taiki Koyama**
+*Coding of Proof of Concept Mobile Application, 
+*Interviews, Design of low-fid Wireframes, 
+*Documentation
+
+**Luthfan Rasyad Maulana** 
+*Gathering of Content (Text, Images & Video) for Proof of Concept Prototype, 
+*Coding of Proof of Concept Mobile Application, 
+*Interviews, 
+*Design of low-fid Wireframes,
+*Creation of Promotional Website
+*Documentation
+
+**Ahmad Hilman Prasetya** - 
+*Gathering of Content (Text, Images & Video) for Proof of Concept Prototype, 
+*Creation of Poster, 
+*Creation of Brochure, 
+*Interviews, 
+*Creating of High Fidelity Mockups, 
+*Design of low-fid Wireframes, 
+*Documentation
