@@ -1,4 +1,4 @@
-# Team Bridgimon
+# Team Bridgimon - iCulture
 
 ## Team Members
 * Ahmad Hilman Prasetya
@@ -51,25 +51,25 @@ Go to this link [bit.ly/iCulture2018](bit.ly/iCulture2018) , and choose to try t
 
 ## Design Process
 
-The design process of iCulture consisted of many phases throughout the course of the DECO3500. The first of these phases was Idea generation & brain-storming, which the results can be found in the [Proposal]() section of our WIKI page. After we were set on our theme dan domain space, we started to conduct further research revolving our domain and our project. The results of which can be found in the [Cultural Events]() and [Video/VR] sections of our WIKI page. The team also conducted tests on the wireframes that were developed which can be found in the [Wireframe Testing]()
+The design process of iCulture consisted of many phases throughout the course of the DECO3500. The first of these phases was Idea generation & brain-storming, which the results can be found in the [Proposal](https://github.com/deco3500-2018/Bridgimon/wiki/Proposal) section of our WIKI page. After we were set on our theme dan domain space, we started to conduct further research revolving our domain and our project. The results of which can be found in the [Cultural Events](https://github.com/deco3500-2018/Bridgimon/wiki/(Interview-Transcripts)-Researching-Cultural-Events) and [Video/VR](https://github.com/deco3500-2018/Bridgimon/wiki/(Interview-Transcript)-Video---360--VR) sections of our WIKI page. The team also conducted tests on the wireframes that were developed which can be found in the [Wireframe Testing](https://github.com/deco3500-2018/Bridgimon/wiki/(Interview-Transcript)-Wireframe-Testing)
 
-With the data that was gathered and the insights that were collected, the team was able to started developing iCulture. The process of development consisted on three interations which is discussed in detail in the [Iterations]() section of our WIKI page.
+With the data that was gathered and the insights that were collected, the team was able to started developing iCulture. The process of development consisted on three interations which is discussed in detail in the [Iterations](https://github.com/deco3500-2018/Bridgimon/wiki/Iterations) section of our WIKI page.
 
-The team also held weekly meetings, be it in the in-class workshops, outside-class meetings, our peer programming sessions. All of the results and insights that were gathered from these weekly meetings were documented in the [Weekly Meetings]() section of our WIKI page.
+The team also held weekly meetings, be it in the in-class workshops, outside-class meetings, our peer programming sessions. All of the results and insights that were gathered from these weekly meetings were documented in the [Weekly Meetings](https://github.com/deco3500-2018/Bridgimon/wiki/Ongoing-Documentation) section of our WIKI page.
 
 
 ## Development Process
 
-The team chose to use Vue.js to develop the proof of concept prototype. Vue.js is a very popular front-end Javascript framework allows us to create modern web applications. Since the team's programmers were already familiar with HTML, CSS, and JavaScript and one of them already being familiar with Vue.js, we thought that this the perfect tool to use to develop the iCulture proof of concept.
+The team chose to use Vue.js to develop the proof of concept prototype. Vue.js is a very popular front-end Javascript framework allows us to create modern web applications. Since the team's programmers were already familiar with HTML, CSS, and JavaScript and one of them already being familiar with Vue.js, we thought that this would be the perfect tool to use to develop the iCulture proof of concept.
 
-Once the high-fidelity mock-up of the design was created, the team's programmers started the development process. As this concept needed a lot of content revolving Chinese New Year, the team had to research a lot of content that we wanted to include in the app. The results of this research can be found in the [Chinese New Year Content]() section of our WIKI page.
+Once the high-fidelity mock-up of the design was created, the team's programmers started the development process. As this concept needed a lot of content revolving Chinese New Year, the team had to research a lot of content that we wanted to include in the app. The results of this research can be found in the [Chinese New Year Content](https://github.com/deco3500-2018/Bridgimon/wiki/Proof-of-Concept-Content) section of our WIKI page.
 
 ## Promotional Material
 For the end of semester showcase, the team prepared several forms of promotional material that aim to promote the iCulture app and the ideas behind it. These promotional materials included:
 
-* **[Poster]()**
-* **[Brochure]()**
-* **[Promotional Website]()**
+* **[Poster](https://github.com/deco3500-2018/Bridgimon/wiki/Poster)**
+* **[Brochure](https://github.com/deco3500-2018/Bridgimon/wiki/Brochure)**
+* **[Promotional Website](https://github.com/deco3500-2018/Bridgimon/wiki/Promotional-Website)**
 
 ## Workload Distribution
 The design team from the beginning stated that all work would be distributed evenly, however a breakdown has been supplied below.
