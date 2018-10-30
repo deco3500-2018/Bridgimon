@@ -75,21 +75,21 @@ For the end of semester showcase, the team prepared several forms of promotional
 The design team from the beginning stated that all work would be distributed evenly, however a breakdown has been supplied below.
 
 **Nipun Amarasinghe** 
-* Interviews, 
+* Interviews [Cultural Events]
 * Gathering of Content (Text, Images & Video) for Proof of Concept Prototype
 * Design of Low Fidelity Wireframes
 * Documentation
 
 **Taiki Koyama**
 * Coding of Proof of Concept Mobile Application, 
-* Interviews
+* Interviews [Cultural Events, Wireframe Testing, VR Testing]
 * Design of Low Fidelity Wireframes 
 * Documentation
 
 **Luthfan Rasyad Maulana** 
 * Gathering of Content (Text, Images & Video) for Proof of Concept Prototype, 
 * Coding of Proof of Concept Mobile Application, 
-* Interviews
+* Interviews [Cultural Events, Wireframe Testing, VR Testing]
 * Design of Low Fidelity Wireframes 
 * Creation of Promotional Website
 * README.md
@@ -99,7 +99,7 @@ The design team from the beginning stated that all work would be distributed eve
 * Gathering of Content (Text, Images & Video) for Proof of Concept Prototype, 
 * Creation of Poster 
 * Creation of Brochure 
-* Interviews
+* Interviews [Cultural Events, Wireframe Testing, VR Testing]
 * Creating of High Fidelity Mockups 
 * Design of Low Fidelity Wireframes 
 * Documentation
