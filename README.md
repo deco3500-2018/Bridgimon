@@ -17,7 +17,9 @@ As non-dominant cultural groups have to go through a lot during the process of a
 ## How To Use iCulture
 
 ### Instructions of Use:
+
 For this project we decided to focus on Chinese New Year as this is simply a proof of concept and not a complete application.
+Go to this link [bit.ly/iCulture2018](bit.ly/iCulture2018) , and choose to try the prototype
 
 **To find content follow these steps:**
 
@@ -33,6 +35,20 @@ For this project we decided to focus on Chinese New Year as this is simply a pro
 * **Food**: Brief summary of food eaten during the time of Chinese New Year. Click on a dish to receive more information.
 * **Attractions**: Brief summary of attractions and events that happen during Chinese New Year. Click on an attraction to receive more information.
 
+### Instructions of Installing Locally
+
+**To install the project locally on your computer, follow these steps**
+1) * [Clone with HTTPS] Open terminal and clone this repository wherever you want on your computer
+`git clone https://github.com/deco3500-2018/Bridgimon.git`
+   * [Clone with SSH] Use an SSH key and passphrase from account. `git@github.com:deco3500-2018/Bridgimon.git`
+   
+2) Install vue by using npm `npm install vue`
+3) In the iCulture Directory, run `npm run dev` to run it in your localhost
+4) To deploy the project on github, run  `npm run build` and push the lasest commit to your repository
+
+
+
+
 ## Design Process
 
 
@@ -42,7 +58,7 @@ For this project we decided to focus on Chinese New Year as this is simply a pro
 ## Workload Distribution
 The design team from the beginning stated that all work would be completed evenly, however a breakdown has been supplied below.
 
-* Nipun Amarasinghe - Interviews, Gathering of Content (Text, Images & Video) for Proof of Concept Prototype, Design of low-fid Wireframes, Documentation
-* Taiki Koyama - Coding of Proof of Concept Mobile Application, Interviews, Design of low-fid Wireframes, Documentation
-* Luthfan Rasyad Maulana - Gathering of Content (Text, Images & Video) for Proof of Concept Prototype, Coding of Proof of Concept Mobile Application, Interviews, Design of low-fid Wireframes, Documentation
-* Ahmad Hilman Prasetya - Gathering of Content (Text, Images & Video) for Proof of Concept Prototype, Creation of Poster, Creation of Brochure, Interviews, Creating of High Fidelity Mockups, Design of low-fid Wireframes, Documentation
+* **Nipun Amarasinghe** - Interviews, Gathering of Content (Text, Images & Video) for Proof of Concept Prototype, Design of low-fid Wireframes, Documentation
+* **Taiki Koyama** - Coding of Proof of Concept Mobile Application, Interviews, Design of low-fid Wireframes, Documentation
+* **Luthfan Rasyad Maulana** - Gathering of Content (Text, Images & Video) for Proof of Concept Prototype, Coding of Proof of Concept Mobile Application, Interviews, Design of low-fid Wireframes, Documentation
+* **Ahmad Hilman Prasetya** - Gathering of Content (Text, Images & Video) for Proof of Concept Prototype, Creation of Poster, Creation of Brochure, Interviews, Creating of High Fidelity Mockups, Design of low-fid Wireframes, Documentation
