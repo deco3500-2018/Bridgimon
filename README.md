@@ -44,7 +44,7 @@ Go to this link [bit.ly/iCulture2018](bit.ly/iCulture2018) , and choose to try t
    
 2) Install vue by using npm `npm install vue`
 3) In the iCulture Directory, run `npm run dev` to run it in your localhost
-4) To deploy the project on github, run  `npm run build` and push the lasest commit to your repository
+4) To deploy the project on github, run  `npm run build` and push the latest commit to your repository
 
 
 
@@ -62,12 +62,13 @@ The team also held weekly meetings, be it in the in-class workshops, outside-cla
 
 ## Promotional Material
 For the end of semester showcase, the team prepared several forms of promotional material that aim to promote the iCulture app and the ideas behind it. These promotional materials included:
-* **Poster**
-* **Brochure**
-* **Promotional Website**
+
+* **[Poster]()**
+* **[Brochure]()**
+* **[Promotional Website]()**
 
 ## Workload Distribution
-The design team from the beginning stated that all work would be completed evenly, however a breakdown has been supplied below.
+The design team from the beginning stated that all work would be distributed evenly, however a breakdown has been supplied below.
 
 **Nipun Amarasinghe** 
 * Interviews, 
