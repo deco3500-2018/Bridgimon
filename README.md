@@ -55,7 +55,7 @@ The design process of iCulture consisted of many phases throughout the course of
 
 With the data that was gathered and the insights that were collected, the team was able to started developing iCulture. The process of development consisted on three interations which is discussed in detail in the [Iterations](https://github.com/deco3500-2018/Bridgimon/wiki/Iterations) section of our WIKI page.
 
-The team also held weekly meetings, be it in the in-class workshops, outside-class meetings, our peer programming sessions. All of the results and insights that were gathered from these weekly meetings were documented in the [Weekly Meetings](https://github.com/deco3500-2018/Bridgimon/wiki/Ongoing-Documentation) section of our WIKI page.
+The team also held weekly meetings, be it in the in-class workshops, outside-class meetings, our peer programming sessions. All of the our activities, results, insights, decisions, and our ideas that were gathered from these weekly meetings were documented in the [Weekly Meetings](https://github.com/deco3500-2018/Bridgimon/wiki/Ongoing-Documentation) section of our WIKI page.
 
 
 ## Development Process
