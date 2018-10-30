@@ -51,37 +51,50 @@ Go to this link [bit.ly/iCulture2018](bit.ly/iCulture2018) , and choose to try t
 
 ## Design Process
 
+The design process of iCulture consisted of many phases throughout the course of the DECO3500. The first of these phases was Idea generation & brain-storming, which the results can be found in the [Proposal]() section of our WIKI page. After we were set on our theme dan domain space, we started to conduct further research revolving our domain and our project. The results of which can be found in the [Cultural Events]() and [Video/VR] sections of our WIKI page. The team also conducted tests on the wireframes that were developed which can be found in the [Wireframe Testing]()
+
+With the data that was gathered and the insights that were collected, the team was able to started developing iCulture. The process of development consisted on three interations which can is discussed in detail in the [Iterations]() section of our WIKI page.
+
+The team also held weekly meetings, be it in the in-class workshops, outside-class meetings, our peer programming sessions. All of the results and insights that were gathered from these weekly meetings were documented in the [Weekly Meetings]() section of our WIKI page.
+
 
 ## Development Process
 
+## Promotional Material
+For the end of semester showcase, the team prepared several forms of promotional material that aim to promote the iCulture app and the ideas behind it. These promotional materials included:
+* **Poster**
+* **Brochure**
+* **Promotional Website**
 
 ## Workload Distribution
 The design team from the beginning stated that all work would be completed evenly, however a breakdown has been supplied below.
 
 **Nipun Amarasinghe** 
-*Interviews, 
-*Gathering of Content (Text, Images & Video) for Proof of Concept Prototype, 
-*Design of low-fid Wireframes, 
-*Documentation
+* Interviews, 
+* Gathering of Content (Text, Images & Video) for Proof of Concept Prototype
+* Design of Low Fidelity Wireframes
+* Documentation
 
 **Taiki Koyama**
-*Coding of Proof of Concept Mobile Application, 
-*Interviews, Design of low-fid Wireframes, 
-*Documentation
+* Coding of Proof of Concept Mobile Application, 
+* Interviews
+* Design of Low Fidelity Wireframes 
+* Documentation
 
 **Luthfan Rasyad Maulana** 
-*Gathering of Content (Text, Images & Video) for Proof of Concept Prototype, 
-*Coding of Proof of Concept Mobile Application, 
-*Interviews, 
-*Design of low-fid Wireframes,
-*Creation of Promotional Website
-*Documentation
+* Gathering of Content (Text, Images & Video) for Proof of Concept Prototype, 
+* Coding of Proof of Concept Mobile Application, 
+* Interviews
+* Design of Low Fidelity Wireframes 
+* Creation of Promotional Website
+* README.md
+* Documentation
 
-**Ahmad Hilman Prasetya** - 
-*Gathering of Content (Text, Images & Video) for Proof of Concept Prototype, 
-*Creation of Poster, 
-*Creation of Brochure, 
-*Interviews, 
-*Creating of High Fidelity Mockups, 
-*Design of low-fid Wireframes, 
-*Documentation
+**Ahmad Hilman Prasetya**
+* Gathering of Content (Text, Images & Video) for Proof of Concept Prototype, 
+* Creation of Poster 
+* Creation of Brochure 
+* Interviews
+* Creating of High Fidelity Mockups 
+* Design of Low Fidelity Wireframes 
+* Documentation
